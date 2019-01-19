@@ -26,3 +26,11 @@ while True:
     elif acao == 3:
         print("Processo finalizado")
         break
+    else:
+        print("#"*80)
+        print("ERROR")
+        print("#"*80)
+        print("")
+        print("Condição inválida, escolha 1, 2 ou 3: ")
+        print("")
+        print("#"*80)
