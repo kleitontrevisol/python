@@ -14,8 +14,8 @@ while True:
     print("Digite 3 para sair")
     acao = int(input("Operação 1, 2 ou 3? "))
     if   acao == 1:
-        ultimo = str(posicaoultimo+1)
-        panquecas.append('panqueca'+ultimo)
+        #ultimo = str(posicaoultimo+1)
+        panquecas.append("panqueca%d"%(posicaoultimo+1))
         posicaoultimo+=1
     elif acao == 2:
         if (len(panquecas)) > 0:
