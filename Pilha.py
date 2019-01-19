@@ -1,11 +1,13 @@
 #em uma pilha o primeiro a chegar é o ultimo a sair, só sai o que chegou por ultimo
-panquecas=["panqueca1","panqueca2","panqueca3","panqueca4","panqueca5","panqueca6"]
+panquecas=[]
 posicaoultimo=len(panquecas)
 while True:
     print("Tem %d panquecas na fila!" % posicaoultimo)
-    print("As panquecas na pilha são .: ")
-    for i, num in enumerate(panquecas):
-        print("Passageiro.: [%d] --> %s" % (i+1,num))
+
+    if (len(panquecas))>0:
+        print("As panquecas na pilha são .: ")
+        for i, num in enumerate(panquecas):
+            print("Passageiro.: [%d] --> %s" % (i+1,num))
 
     print("#"*80)
 
@@ -22,7 +24,12 @@ while True:
             panquecas.pop(-1)#exclui o topo da pilha
             posicaoultimo-=1
         else:
-            print("A fila está vazia")
+            print("")
+            print("#"*80)
+            print("")
+            print("ERROR ao excluir pilha vazia")
+            print("")
+            print("#"*80)
     elif acao == 3:
         print("Processo finalizado")
         break
@@ -34,4 +41,3 @@ while True:
         print("Condição inválida, escolha 1, 2 ou 3: ")
         print("")
         print("#"*80)
-
